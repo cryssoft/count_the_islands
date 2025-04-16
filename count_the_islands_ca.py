@@ -104,8 +104,9 @@ def main(p_argv: list[str]) -> None:
     Some of the error handling breaks the "one return" coding policy, but it's a trivial example
     program and our main() returns None anyway.
 
-    Run the two, slightly different visitors through the same, cellular automata-style controller
-    to knock off stragglers/dangling bits from the "islands" then reduce the contiguous bits.
+    Run the two, visitor function through the same, cellular automata-style controller twice with
+    slightly different parameters to (1) knock off stragglers/dangling bits from the "islands"
+    then (2) reduce the contiguous bits.
     """
     l_count_islands: int = 0
 
@@ -128,7 +129,7 @@ def main(p_argv: list[str]) -> None:
         print(f"\nTotal islands: {l_count_islands}\n")
     else:
         print("USAGE:  count_the_islands_ca.py expected-rows expected-columns filename")
-        
+
     return
 
 
