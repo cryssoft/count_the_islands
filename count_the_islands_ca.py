@@ -104,7 +104,7 @@ def main(p_argv: list[str]) -> None:
     Some of the error handling breaks the "one return" coding policy, but it's a trivial example
     program and our main() returns None anyway.
 
-    Run the two, visitor function through the same, cellular automata-style controller twice with
+    Run the visitor function through the same, cellular automata-style controller twice with
     slightly different parameters to (1) knock off stragglers/dangling bits from the "islands"
     then (2) reduce the contiguous bits.
     """
